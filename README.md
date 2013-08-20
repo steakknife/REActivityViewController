@@ -20,12 +20,12 @@ pod 'REActivityViewController', :podspec => 'https://raw.github.com/steakknife/R
 reactivityviewcontroller_options = %w{}
 #### dont change anything after here
 if reactivityviewcontroller_options.include? 'facebook'
-  pod 'Facebook-iOS-SDK', '>= 3.5'
+  pod 'Facebook-iOS-SDK',                '>= 3.5'
   pod 'DEFacebookComposeViewController', '~> 1.0.0'
-  pod 'REComposeViewController', '~> 2.1.2'
+  pod 'REComposeViewController',         '~> 2.1.2'
 end
-pod 'AFXAuthClient', '~> 1.0.8' if reactivityviewcontroller_options & %w{pocket readability tumblr}
-pod 'AFNetworking', '~> 1.3' if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt vkontakte}
+pod 'AFXAuthClient',     '~> 1.0.8' if reactivityviewcontroller_options & %w{pocket readability tumblr}
+pod 'AFNetworking',      '~> 1.3'   if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt vkontakte}
 pod 'SFHFKeychainUtils', '~> 0.0.1' if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt}
 post_install do |installer|
   prefix_header = installer.config.project_pods_root + 'Pods-prefix.pch'
