@@ -19,31 +19,22 @@ pod 'REActivityViewController', :podspec => 'https://raw.github.com/steakknife/R
 # reactivityviewcontroller_options = %w{safari pocket facebook}
 reactivityviewcontroller_options = %w{}
 #### dont change anything after here
-
 if reactivityviewcontroller_options.include? 'facebook'
   pod 'Facebook-iOS-SDK', '>= 3.5'
   pod 'DEFacebookComposeViewController', '~> 1.0.0'
   pod 'REComposeViewController', '~> 2.1.2'
 end
-
-pod 'PocketAPI', '~> 1.0.2' if reactivityviewcontroller_options.include? 'pocket'
-
 pod 'AFXAuthClient', '~> 1.0.8' if reactivityviewcontroller_options & %w{pocket readability tumblr}
-
 pod 'AFNetworking', '~> 1.3' if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt vkontakte}
-
 pod 'SFHFKeychainUtils', '~> 0.0.1' if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt}
-
 post_install do |installer|
   prefix_header = installer.config.project_pods_root + 'Pods-prefix.pch'
-  text = prefix_header.read.split("\n")
-  text = text.map{|line|
+  text = prefix_header.read.split("\n").map{|line|
     line.gsub(/#define REACTIVITYVIEWCONTROLLER_HAS_.*$/, '')
   }.join("\n")
   reactivityviewcontroller_options.map do |option|
     text += "\n#define REACTIVITYVIEWCONTROLLER_HAS_#{option.upcase}"
   end
-
   prefix_header.open('w') do |file|
     file.write(text)
   end
