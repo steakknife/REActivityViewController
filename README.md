@@ -2,6 +2,15 @@
 
 ## This is a modified version, with all of the social components disabled by default
 
+
+### (anything social)
+
+```ruby
+pod 'AFNetworking', '~> 1.3'
+pod 'REComposeViewController', '~> 2.1.2'
+pod 'SFHFKeychainUtils', '~> 0.0.1'
+```
+
 ### Apple Message
 
 - add framework MessageUI

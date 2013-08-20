@@ -16,9 +16,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '5.0'
   s.ios.frameworks = 'QuartzCore', 'AssetsLibrary'
 
-  s.dependency 'AFNetworking', '~> 1.3'
-  s.dependency 'REComposeViewController', '~> 2.1.2'
-  s.dependency 'SFHFKeychainUtils', '~> 0.0.1'
   s.prefix_header_contents = <<-EOS
 #import <Availability.h>
 
