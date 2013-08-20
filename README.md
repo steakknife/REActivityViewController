@@ -7,7 +7,7 @@
 Add this to your `Podfile`:
 
 ```ruby
-pod 'REActivityViewController'
+pod 'REActivityViewController', '~> 4.0'
 
 #### REActivityViewController start
 
