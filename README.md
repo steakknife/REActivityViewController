@@ -1,5 +1,32 @@
 # REActivityViewController
 
+## This is a modified version, with all of the social components disabled by default
+
+### Apple Message
+
+- add framework MessageUI
+
+### Safari
+
+### Facebook
+
+- add `pod DEFacebookComposeViewController', '~> 1.0.0'`
+- add `pod 'Facebook-iOS-SDK', '>= 3.5'`
+- add weak framework Social
+
+### Twitter
+
+- add framework `Twitter`
+- add weak framework `Social`
+
+### Pocket
+
+- add `pod 'AFXAuthClient', '~> 1.0.8'`
+- add `pod 'PocketAPI', '~> 1.0.2'`
+
+### Diigo
+
+
 Open source alternative to UIActivityViewController, highly customizable and compatible with iOS 5.0.
 It allows to create custom activites with ease, you control their apperance and behavior and no longer restricted to single-color icons as with the default `UIActivity`.
 
