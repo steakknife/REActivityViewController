@@ -18,7 +18,6 @@ pod 'REActivityViewController', :podspec => 'https://raw.github.com/steakknife/R
 # example:
 # reactivityviewcontroller_options = %w{safari pocket facebook}
 reactivityviewcontroller_options = %w{}
-
 #### dont change anything after here
 
 if reactivityviewcontroller_options.include? 'facebook'
@@ -37,16 +36,19 @@ pod 'SFHFKeychainUtils', '~> 0.0.1' if reactivityviewcontroller_options & %w{ins
 
 post_install do |installer|
   prefix_header = installer.config.project_pods_root + 'Pods-prefix.pch'
-  text = prefix_header.read
-  text.gsub(/#define REACTIVITYVIEWCONTROLLER_HAS_.*$/, '')
+  text = prefix_header.read.split("\n")
+  text = text.map{|line|
+    line.gsub(/#define REACTIVITYVIEWCONTROLLER_HAS_.*$/, '')
+  }.join("\n")
   reactivityviewcontroller_options.map do |option|
     text += "\n#define REACTIVITYVIEWCONTROLLER_HAS_#{option.upcase}"
   end
+
   prefix_header.open('w') do |file|
     file.write(text)
   end
 end
-#### REActivityViewController end
+### REActivityViewController end
 ```
 
 ## Default Activities
