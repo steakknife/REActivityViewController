@@ -23,21 +23,49 @@
 // THE SOFTWARE.
 //
 
-#import "REFacebookActivity.h"
-#import "RETwitterActivity.h"
-#import "REMessageActivity.h"
+// always enabled
 #import "REMailActivity.h"
 #import "REPrintActivity.h"
 #import "RECopyActivity.h"
-#import "RESafariActivity.h"
-#import "REChromeActivity.h"
 #import "REMapsActivity.h"
 #import "RESaveToCameraRollActivity.h"
+
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_FACEBOOK
+#import "REFacebookActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_TWITTER
+#import "RETwitterActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_MESSAGE
+#import "REMessageActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_SAFARI
+#import "RESafariActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_CHROME
+#import "REChromeActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_TUMBLR
 #import "RETumblrActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE
 #import "REVKActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_INSTAPAPER
 #import "REInstapaperActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_POCKET
 #import "REPocketActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_READABILITY
 #import "REReadabilityActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_DIIGO
 #import "REDiigoActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_KIPPT
 #import "REKipptActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_SINAWEIBO
 #import "RESinaWeiboActivity.h"
+#endif

@@ -2,39 +2,122 @@
 
 ## This is a modified version, with all of the social components disabled by default
 
+## Setup
 
-### (anything social)
+Add this to your `Podfile`:
 
 ```ruby
-pod 'AFNetworking', '~> 1.3'
-pod 'REComposeViewController', '~> 2.1.2'
-pod 'SFHFKeychainUtils', '~> 0.0.1'
+pod 'REActivityViewController'
+
+#### REActivityViewController start
+
+# valid values are:
+# facebook twitter message safari chrome tumblr vkontakte
+# instapaper pocket readability diigo kippt sinaweibo
+
+# example:
+# reactivityviewcontroller_options = %w{safari pocket facebook}
+reactivityviewcontroller_options = %w{}
+
+#### dont change anything after here
+
+if reactivityviewcontroller_options.include? 'facebook'
+  pod 'Facebook-iOS-SDK', '>= 3.5'
+  pod 'DEFacebookComposeViewController', '~> 1.0.0'
+  pod 'REComposeViewController', '~> 2.1.2'
+end
+
+pod 'PocketAPI', '~> 1.0.2' if reactivityviewcontroller_options.include? 'pocket'
+
+pod 'AFXAuthClient', '~> 1.0.8' if reactivityviewcontroller_options & %w{pocket readability tumblr}
+
+pod 'AFNetworking', '~> 1.3' if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt vkontakte}
+
+pod 'SFHFKeychainUtils', '~> 0.0.1' if reactivityviewcontroller_options & %w{instapaper readability tumblr diigo kippt}
+
+post_install do |installer|
+  prefix_header = installer.config.project_pods_root + 'Pods-prefix.pch'
+  text = prefix_header.read
+  text.gsub(/#define REACTIVITYVIEWCONTROLLER_HAS_.*$/, '')
+  reactivityviewcontroller_options.map do |option|
+    text += "\n#define REACTIVITYVIEWCONTROLLER_HAS_#{option.upcase}"
+  end
+  prefix_header.open('w') do |file|
+    file.write(text)
+  end
+end
+#### REActivityViewController end
 ```
+
+## Default Activities
+
+The following are enabled by default:
+
+- Mail
+- Print
+- Copy
+- Maps
+- Save to Camera Roll
+
+## Optional Acitivites
 
 ### Apple Message
 
-- add framework MessageUI
+- add `message` to `reactivityviewcontroller_options` in `Podfile`
+- add framework `MessageUI`
 
 ### Safari
 
+- add `safari` to `reactivityviewcontroller_options` in `Podfile`
+
+### Chrome
+
+- add `chrome` to `reactivityviewcontroller_options` in `Podfile`
+
 ### Facebook
 
-- add `pod DEFacebookComposeViewController', '~> 1.0.0'`
-- add `pod 'Facebook-iOS-SDK', '>= 3.5'`
-- add weak framework Social
+- add `facebook` to `reactivityviewcontroller_options` in `Podfile`
+- add weak framework `Social`
 
 ### Twitter
 
+- add `twitter` to `reactivityviewcontroller_options` in `Podfile`
 - add framework `Twitter`
 - add weak framework `Social`
 
+### Instapaper
+
+- add `instapaper` to `reactivityviewcontroller_options` in `Podfile`
+
 ### Pocket
 
-- add `pod 'AFXAuthClient', '~> 1.0.8'`
-- add `pod 'PocketAPI', '~> 1.0.2'`
+- add `pocket` to `reactivityviewcontroller_options` in `Podfile`
+
+### Readability
+
+- add `readability` to `reactivityviewcontroller_options` in `Podfile`
+
+### Tumblr
+
+- add `tumblr` to `reactivityviewcontroller_options` in `Podfile`
 
 ### Diigo
 
+- add `diigo` to `reactivityviewcontroller_options` in `Podfile`
+
+### Kippt
+
+- add `kippt` to `reactivityviewcontroller_options` in `Podfile`
+
+### ВКонтакте (VKontakte)
+
+- add `vkontakte` to `reactivityviewcontroller_options` in `Podfile`
+
+### 新浪微博 (Sina Weibo)
+
+- add `sinaweibo` to `reactivityviewcontroller_options` in `Podfile`
+
+## Description
 
 Open source alternative to UIActivityViewController, highly customizable and compatible with iOS 5.0.
 It allows to create custom activites with ease, you control their apperance and behavior and no longer restricted to single-color icons as with the default `UIActivity`.
