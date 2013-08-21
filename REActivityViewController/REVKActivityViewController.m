@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE
 #import "REVKActivityViewController.h"
 #import "REAuthCell.h"
 
@@ -132,3 +133,4 @@
 }
 
 @end
+#endif

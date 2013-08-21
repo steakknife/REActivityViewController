@@ -24,6 +24,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_SINAWEIBO
 #import "RESinaWeiboActivity.h"
 #import "REActivityViewController.h"
 
@@ -72,3 +73,4 @@
 }
 
 @end
+#endif

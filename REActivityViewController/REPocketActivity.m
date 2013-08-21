@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_POCKET
 #import "REPocketActivity.h"
 #import "REActivityViewController.h"
 #import "PocketAPI.h"
@@ -63,3 +64,4 @@
 }
 
 @end
+#endif

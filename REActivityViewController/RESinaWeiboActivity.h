@@ -24,9 +24,11 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_SINAWEIBO
 #import "REActivity.h"
 #import <Social/Social.h>
 
 @interface RESinaWeiboActivity : REActivity
 
 @end
+#endif

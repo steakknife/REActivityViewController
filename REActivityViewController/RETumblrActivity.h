@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_TUMBLR
 #import "REActivity.h"
 #import "REComposeViewController.h"
 
@@ -34,3 +35,4 @@
 - (id)initWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret;
 
 @end
+#endif

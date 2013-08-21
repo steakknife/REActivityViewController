@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_DIIGO
 #import "REActivity.h"
 
 @interface REDiigoActivity : REActivity
@@ -32,3 +33,4 @@
 - (id)initWithAPIKey:(NSString *)apiKey;
 
 @end
+#endif

@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_TUMBLR
 #import "RETumblrActivity.h"
 #import "REActivityViewController.h"
 #import "REAuthViewController.h"
@@ -205,3 +206,4 @@
 }
 
 @end
+#endif

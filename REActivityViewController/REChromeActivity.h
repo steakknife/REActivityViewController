@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Marks & Spencer. All rights reserved.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_CHROME
 #import "REActivity.h"
 
 @interface REChromeActivity : REActivity
@@ -16,3 +17,4 @@
 - (id)initWithCallbackURL:(NSURL *)callbackURL;
 
 @end
+#endif

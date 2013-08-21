@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_TWITTER
 #import "RETwitterActivity.h"
 #import "REActivityViewController.h"
 #import <Twitter/Twitter.h>
@@ -62,3 +63,4 @@
 }
 
 @end
+#endif

@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE
 #import "REActivity.h"
 
 @interface REVKActivity : REActivity
@@ -33,3 +34,4 @@
 - (void)share;
 
 @end
+#endif

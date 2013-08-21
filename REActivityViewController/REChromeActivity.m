@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Marks & Spencer. All rights reserved.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_CHROME
 #import "REChromeActivity.h"
 #import "REActivityViewController.h"
 
@@ -124,3 +125,4 @@ static NSString * encodeByAddingPercentEscapes(NSString *input) {
 }
 
 @end
+#endif

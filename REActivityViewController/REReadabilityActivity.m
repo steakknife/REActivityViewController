@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_READABILITY
 #import "REReadabilityActivity.h"
 #import "REActivityViewController.h"
 #import "REAuthViewController.h"
@@ -129,3 +130,4 @@
 }
 
 @end
+#endif

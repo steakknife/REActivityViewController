@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_MESSAGE
 #import "REActivity.h"
 #import <MessageUI/MessageUI.h>
 
@@ -30,3 +31,4 @@
 
 
 @end
+#endif

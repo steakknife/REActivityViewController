@@ -23,9 +23,12 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_FACEBOOK
+
 #import "REActivity.h"
 #import <Social/Social.h>
 
 @interface REFacebookActivity : REActivity
 
 @end
+#endif

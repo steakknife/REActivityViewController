@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 //
 
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_KIPPT
 #import "REActivity.h"
 
 @interface REKipptActivity : REActivity
@@ -30,3 +31,4 @@
 - (id)init;
 
 @end
+#endif
