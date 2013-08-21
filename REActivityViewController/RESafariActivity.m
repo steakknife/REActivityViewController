@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_SAFARI
 #import "RESafariActivity.h"
 #import "REActivityViewController.h"
 
@@ -52,4 +51,3 @@
 }
 
 @end
-#endif

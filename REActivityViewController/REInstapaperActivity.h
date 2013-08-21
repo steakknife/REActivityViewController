@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_INSTAPAPER
 #import "REActivity.h"
 
 @interface REInstapaperActivity : REActivity {
@@ -31,4 +30,3 @@
 }
 
 @end
-#endif

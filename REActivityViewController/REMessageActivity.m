@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_MESSAGE
 #import "REMessageActivity.h"
 #import "REActivityViewController.h"
 #import "REActivityDelegateObject.h"
@@ -69,4 +68,3 @@
 }
 
 @end
-#endif

@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_KIPPT
 #import "REKipptActivity.h"
 #import "REActivityViewController.h"
 #import "REAuthViewController.h"
@@ -120,4 +119,3 @@
 }
 
 @end
-#endif

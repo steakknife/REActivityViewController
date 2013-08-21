@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE
 #import "REVKActivity.h"
 #import "REActivityViewController.h"
 #import "REVKActivityViewController.h"
@@ -223,4 +222,3 @@
 }
 
 @end
-#endif

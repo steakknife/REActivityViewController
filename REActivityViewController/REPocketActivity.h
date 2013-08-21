@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_POCKET
 #import "REActivity.h"
 
 @interface REPocketActivity : REActivity
@@ -31,4 +30,3 @@
 - (id)initWithConsumerKey:(NSString *)consumerKey;
 
 @end
-#endif

@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_INSTAPAPER
 #import "REInstapaperActivity.h"
 #import "REActivityViewController.h"
 #import "AFNetworking.h"
@@ -110,4 +109,3 @@
 }
 
 @end
-#endif

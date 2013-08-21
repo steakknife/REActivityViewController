@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE
 #import <UIKit/UIKit.h>
 #import "REVKActivity.h"
 
@@ -38,4 +37,3 @@
 - (id)initWithClientId:(NSString *)clientId;
 
 @end
-#endif

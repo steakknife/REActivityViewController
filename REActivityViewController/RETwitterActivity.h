@@ -23,10 +23,8 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_TWITTER
 #import "REActivity.h"
 
 @interface RETwitterActivity : REActivity
 
 @end
-#endif

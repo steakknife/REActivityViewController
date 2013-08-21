@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_FACEBOOK
 #import "REFacebookActivity.h"
 #import "REActivityViewController.h"
 #import "DEFacebookComposeViewController.h"
@@ -71,4 +70,3 @@
 }
 
 @end
-#endif

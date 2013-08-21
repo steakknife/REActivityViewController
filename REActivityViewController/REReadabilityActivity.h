@@ -23,7 +23,6 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_READABILITY
 #import "REActivity.h"
 
 @interface REReadabilityActivity : REActivity
@@ -34,4 +33,3 @@
 - (id)initWithConsumerKey:(NSString *)consumerKey consumerSecret:(NSString *)consumerSecret;
 
 @end
-#endif

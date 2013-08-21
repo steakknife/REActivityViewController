@@ -23,10 +23,8 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_SAFARI
 #import "REActivity.h"
 
 @interface RESafariActivity : REActivity
 
 @end
-#endif
