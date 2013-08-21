@@ -2,79 +2,53 @@
 
 ## This is a modified version, with all of the social components disabled by default
 
-## Setup
+## Setup (this repo)
 
-Replace the `pod 'REActivityViewController'` line from the original project with **this fork's `Podfile` boilerplate** and **edit to enable the options you want**.
+### Everything (all activities and localizations)
 
-## Default Activities
+```ruby
+PODSPEC = 'https://raw.github.com/steakknife/' +
+              'REActivityViewController/master/' +
+              'REActivityViewController.podspec'
 
-The following are enabled by default:
+pod 'REActivityViewController', :podspec => PODSPEC
+```
 
-- Mail
-- Print
-- Copy
-- Maps
-- Save to Camera Roll
+### All activities in Russian only
 
-## Optional Acitivites
+```ruby
+PODSPEC = 'https://raw.github.com/steakknife/' +
+              'REActivityViewController/master/' +
+              'REActivityViewController.podspec'
 
-### Apple Message
+pod 'REActivityViewController/Activity', :podspec => PODSPEC
+pod 'REActivityViewController/Localization/ru', :podspec => PODSPEC
+```
 
-- add `message` to `reactivityviewcontroller_options` in `Podfile`
-- add framework `MessageUI`
+### Just Twitter and all localizations
 
-### Safari
+```ruby
+PODSPEC = 'https://raw.github.com/steakknife/' +
+              'REActivityViewController/master/' +
+              'REActivityViewController.podspec'
 
-- add `safari` to `reactivityviewcontroller_options` in `Podfile`
+pod 'REActivityViewController/Activity/Twitter', :podspec => PODSPEC
+pod 'REActivityViewController/Localization', :podspec => PODSPEC
+```
 
-### Chrome
+### Just Facebook, Tumblr and German
 
-- add `chrome` to `reactivityviewcontroller_options` in `Podfile`
+```ruby
+PODSPEC = 'https://raw.github.com/steakknife/' +
+              'REActivityViewController/master/' +
+              'REActivityViewController.podspec'
 
-### Facebook
+pod 'REActivityViewController/Activity/Facebook', :podspec => PODSPEC
+pod 'REActivityViewController/Activity/Tumblr', :podspec => PODSPEC
+pod 'REActivityViewController/Localization/de', :podspec => PODSPEC
+```
 
-- add `facebook` to `reactivityviewcontroller_options` in `Podfile`
-- add weak framework `Social`
-
-### Twitter
-
-- add `twitter` to `reactivityviewcontroller_options` in `Podfile`
-- add framework `Twitter`
-- add weak framework `Social`
-
-### Instapaper
-
-- add `instapaper` to `reactivityviewcontroller_options` in `Podfile`
-
-### Pocket
-
-- add `pocket` to `reactivityviewcontroller_options` in `Podfile`
-
-### Readability
-
-- add `readability` to `reactivityviewcontroller_options` in `Podfile`
-
-### Tumblr
-
-- add `tumblr` to `reactivityviewcontroller_options` in `Podfile`
-
-### Diigo
-
-- add `diigo` to `reactivityviewcontroller_options` in `Podfile`
-
-### Kippt
-
-- add `kippt` to `reactivityviewcontroller_options` in `Podfile`
-
-### ВКонтакте (VKontakte)
-
-- add `vkontakte` to `reactivityviewcontroller_options` in `Podfile`
-
-### 新浪微博 (Sina Weibo)
-
-- add `sinaweibo` to `reactivityviewcontroller_options` in `Podfile`
-
-## Description
+## Description (old - original)
 
 Open source alternative to UIActivityViewController, highly customizable and compatible with iOS 5.0.
 It allows to create custom activites with ease, you control their apperance and behavior and no longer restricted to single-color icons as with the default `UIActivity`.

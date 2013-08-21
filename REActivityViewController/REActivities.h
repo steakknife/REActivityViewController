@@ -23,13 +23,21 @@
 // THE SOFTWARE.
 //
 
-// always enabled
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_MAIL
 #import "REMailActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_PRINT
 #import "REPrintActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_COPY
 #import "RECopyActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_MAPS
 #import "REMapsActivity.h"
+#endif
+#ifdef REACTIVITYVIEWCONTROLLER_HAS_SAVE_TO_CAMERA_ROLL
 #import "RESaveToCameraRollActivity.h"
-
+#endif
 #ifdef REACTIVITYVIEWCONTROLLER_HAS_FACEBOOK
 #import "REFacebookActivity.h"
 #endif
