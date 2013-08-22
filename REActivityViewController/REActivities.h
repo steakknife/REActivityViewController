@@ -23,57 +23,57 @@
 // THE SOFTWARE.
 //
 
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_MAIL
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail
 #import "REMailActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_PRINT
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Print
 #import "REPrintActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_COPY
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Copy
 #import "RECopyActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_MAPS
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Maps
 #import "REMapsActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_SAVE_TO_CAMERA_ROLL
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_SaveToCameraRoll
 #import "RESaveToCameraRollActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_FACEBOOK
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Facebook
 #import "REFacebookActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_TWITTER
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Twitter
 #import "RETwitterActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_MESSAGE
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Message
 #import "REMessageActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_SAFARI
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Safari
 #import "RESafariActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_CHROME
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Chrome
 #import "REChromeActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_TUMBLR
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Tumblr
 #import "RETumblrActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_VK
 #import "REVKActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_INSTAPAPER
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Instapaper
 #import "REInstapaperActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_POCKET
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Pocket
 #import "REPocketActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_READABILITY
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Readability
 #import "REReadabilityActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_DIIGO
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Diigo
 #import "REDiigoActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_KIPPT
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Kippt
 #import "REKipptActivity.h"
 #endif
-#ifdef REACTIVITYVIEWCONTROLLER_HAS_SINAWEIBO
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_SinaWeibo
 #import "RESinaWeiboActivity.h"
 #endif

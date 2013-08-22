@@ -44,14 +44,18 @@ static REActivityDelegateObject *_sharedObject = nil;
     return _sharedObject;
 }
 
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Message
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
 {
     [self.controller dismissViewControllerAnimated:YES completion:nil];
 }
+#endif
 
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
     [self.controller dismissViewControllerAnimated:YES completion:nil];
 }
+#endif
 
 @end
