@@ -36,6 +36,13 @@
 
 @implementation REActivityViewController
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:(BOOL)animated];
+    if (onAppear)
+        onAppear();
+}
+
 - (void)loadView
 {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
@@ -92,12 +99,16 @@
             [weakSelf removeFromParentViewController];
             if (completion)
                 completion();
+            if (onCompletion)
+                onCompletion();
         }];
     } else {
         [self.presentingPopoverController dismissPopoverAnimated:YES];
         [self performBlock:^{
             if (completion)
                 completion();
+            if (onCompletion)
+                onCompletion();
         } afterDelay:0.4];
     }
 }

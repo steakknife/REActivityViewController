@@ -40,6 +40,8 @@
 @property (weak, nonatomic) UIPopoverController *presentingPopoverController;
 @property (weak, nonatomic) UIViewController *presentingController;
 @property (weak, nonatomic) UIViewController *rootViewController;
+@property (strong, nonatomic) void (^onAppear)(void);
+@property (strong, nonatomic) void (^onCompletion)(void);
 
 - (id)initWithViewController:(UIViewController *)viewController activities:(NSArray *)activities;
 - (void)presentFromRootViewController;
