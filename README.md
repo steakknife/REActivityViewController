@@ -1,6 +1,6 @@
 # REActivityViewController
 
-## This is a modified version, with all of the social components disabled by default
+## This is a modified version, with all activities and localizations as subspecs that can be individually selected.
 
 ## Setup (this repo)
 
