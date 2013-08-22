@@ -164,8 +164,10 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Core' do |t|
-    t.ios.source_files = 'REActivityViewController/REActivit*.{h,m}'
-    t.ios.public_header_files = 'REActivityViewController/REActivit*.h'
+    t.ios.source_files = 'REActivityViewController/REActivit*.{h,m}',
+                         'REActivityViewController/REConfig.h'
+    t.ios.public_header_files = 'REActivityViewController/REActivit*.h',
+                                'REActivityViewController/REConfig.h'
     t.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/{Background,Button,Icon_Custom}*.png' }
     t.ios.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration', 'MobileCoreServices', 'Security'
     s.ios.prefix_header_contents = <<-EOS
