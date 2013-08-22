@@ -186,29 +186,12 @@ EOS
   end
 
   s.subspec 'Localization' do |t|
-    t.subspec 'de' do |u|
-      u.ios.resource_bundle = { 'de.lproj' => 'REActivityViewController/Localizations/de.lproj' }
-    end
-
-    t.subspec 'en' do |u|
-      u.ios.resource_bundle = { 'en.lproj' => 'REActivityViewController/Localizations/en.lproj' }
-    end
-
-    t.subspec 'fr' do |u|
-      u.ios.resource_bundle = { 'fr.lproj' => 'REActivityViewController/Localizations/fr.lproj' }
-    end
-
-    t.subspec 'ru' do |u|
-      u.ios.resource_bundle = { 'ru.lproj' => 'REActivityViewController/Localizations/ru.lproj' }
-    end
-
-    t.subspec 'ua' do |u|
-      u.ios.resource_bundle = { 'ua.lproj' => 'REActivityViewController/Localizations/ua.lproj' }
-    end
-
-    t.subspec 'zh-Hans' do |u|
-      u.ios.resource_bundle = { 'zh-Hans.lproj' => 'REActivityViewController/Localizations/zh-Hans.lproj' }
-    end
+    %w|en fr ru ua zh-Hans|.map {|localename|
+      t.subspec localename do |u|
+        u.ios.resources = "REActivityViewController/Localizations/#{localename}.lproj"
+        u.ios.preserve_paths = "REActivityViewController/Localizations/#{localename}.lproj" 
+     end
+    }
   end
 
   s.subspec 'Trash' do |t|
