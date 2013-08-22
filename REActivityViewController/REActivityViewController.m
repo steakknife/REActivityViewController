@@ -39,8 +39,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:(BOOL)animated];
-    if (onAppear)
-        onAppear();
+    if (self.onAppear)
+        self.onAppear();
 }
 
 - (void)loadView
@@ -99,16 +99,16 @@
             [weakSelf removeFromParentViewController];
             if (completion)
                 completion();
-            if (onCompletion)
-                onCompletion();
+            if (self.onCompletion)
+                self.onCompletion();
         }];
     } else {
         [self.presentingPopoverController dismissPopoverAnimated:YES];
         [self performBlock:^{
             if (completion)
                 completion();
-            if (onCompletion)
-                onCompletion();
+            if (self.onCompletion)
+                self.onCompletion();
         } afterDelay:0.4];
     }
 }
