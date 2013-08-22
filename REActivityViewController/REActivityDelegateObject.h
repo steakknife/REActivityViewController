@@ -24,8 +24,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Message
+#if defined(COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Message ) || defined(COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail)
 #import <MessageUI/MessageUI.h>
+#endif
+#ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail
+#import <MessageUI/MFMailComposeViewController.h>
 #endif
 
 @interface REActivityDelegateObject : NSObject <

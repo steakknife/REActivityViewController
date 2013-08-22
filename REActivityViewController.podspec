@@ -66,6 +66,7 @@ Pod::Spec.new do |s|
       u.ios.source_files = 'REActivityViewController/REMailActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Mail*.png' }
       u.ios.dependency 'REActivityViewController/Core'
+      u.ios.frameworks = 'MessageUI'
     end
 
     t.subspec 'Maps' do |u|
