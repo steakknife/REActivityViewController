@@ -16,21 +16,21 @@ Pod::Spec.new do |s|
     t.subspec 'Chrome' do |u|
       u.ios.source_files = 'REActivityViewController/REChromeActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_CHROME'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Chrome*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Chrome*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Copy' do |u|
       u.ios.source_files = 'REActivityViewController/RECopyActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_COPY'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Copy*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Copy*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Diigo' do |u|
       u.ios.source_files = 'REActivityViewController/REDiigoActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_DIIGO'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Diigo*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Diigo*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
       u.ios.dependency 'SFHFKeychainUtils', '~> 0.0.1'
       u.ios.dependency 'REActivityViewController/Auth'
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     t.subspec 'Facebook' do |u|
       u.ios.source_files = 'REActivityViewController/REFacebookActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_FACEBOOK'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Facebook*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Facebook*.png' }
       u.ios.dependency 'Facebook-iOS-SDK', '>= 3.5'
       u.ios.dependency 'DEFacebookComposeViewController', '~> 1.0.0'
       u.ios.dependency 'REComposeViewController', '~> 2.1.2'
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
     t.subspec 'Instapaper' do |u|
       u.ios.source_files = 'REActivityViewController/REInstapaperActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_INSTAPAPER'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Instapaper*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Instapaper*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
       u.ios.dependency 'SFHFKeychainUtils', '~> 0.0.1'
       u.ios.dependency 'REActivityViewController/Auth'
@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
     t.subspec 'Kippt' do |u|
       u.ios.source_files = 'REActivityViewController/REKipptActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_KIPPT'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Kippt*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Kippt*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
       u.ios.dependency 'SFHFKeychainUtils', '~> 0.0.1'
       u.ios.dependency 'REActivityViewController/Auth'
@@ -71,21 +71,21 @@ Pod::Spec.new do |s|
     t.subspec 'Mail' do |u|
       u.ios.source_files = 'REActivityViewController/REMailActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_MAIL'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Mail*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Mail*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Maps' do |u|
       u.ios.source_files = 'REActivityViewController/REMapsActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_MAPS'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Maps*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Maps*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Message' do |u|
       u.ios.source_files = 'REActivityViewController/REMessageActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_MESSAGE'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Message*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Message*.png' }
       u.ios.dependency 'REActivityViewController/Core'
       u.ios.frameworks = 'MessageUI'
     end
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
     t.subspec 'Pocket' do |u|
       u.ios.source_files = 'REActivityViewController/REPocketActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_POCKET'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Pocket*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Pocket*.png' }
       u.ios.dependency 'PocketAPI', '~> 1.0.2'
       u.ios.dependency 'AFXAuthClient', '~> 1.0.8'
       u.ios.dependency 'REActivityViewController/Core'
@@ -102,14 +102,14 @@ Pod::Spec.new do |s|
     t.subspec 'Print' do |u|
       u.ios.source_files = 'REActivityViewController/REPrintActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_PRINT'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Print*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Print*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Readability' do |u|
       u.ios.source_files = 'REActivityViewController/REReadabilityActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_READABILITY'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Readability*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Readability*.png' }
       u.ios.dependency 'AFXAuthClient', '~> 1.0.8'
       u.ios.dependency 'AFNetworking', '~> 1.3'
       u.ios.dependency 'SFHFKeychainUtils', '~> 0.0.1'
@@ -120,14 +120,14 @@ Pod::Spec.new do |s|
     t.subspec 'Safari' do |u|
       u.ios.source_files = 'REActivityViewController/RESafariActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_SAFARI'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Safari*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Safari*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'SaveToCameraRoll' do |u|
       u.ios.source_files = 'REActivityViewController/RESaveToCameraRollActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_SAVE_TO_CAMERA_ROLL'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Photos*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Photos*.png' }
       u.ios.dependency 'REActivityViewController/Core'
       u.ios.frameworks = 'QuartzCore', 'AssetsLibrary'
     end
@@ -135,7 +135,7 @@ Pod::Spec.new do |s|
     t.subspec 'SinaWeibo' do |u|
       u.ios.source_files = 'REActivityViewController/RESinaWeiboActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_SINAWEIBO'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Weibo*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Weibo*.png' }
       u.ios.dependency 'REActivityViewController/Core'
       u.ios.dependency 'REActivityViewController/UIImage+Resize'
     end
@@ -143,7 +143,7 @@ Pod::Spec.new do |s|
     t.subspec 'Tumblr' do |u|
       u.ios.source_files = 'REActivityViewController/RETumblrActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_TUMBLR'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Tumblr*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Tumblr*.png' }
       u.ios.dependency 'AFXAuthClient', '~> 1.0.8'
       u.ios.dependency 'AFNetworking', '~> 1.3'
       u.ios.dependency 'SFHFKeychainUtils', '~> 0.0.1'
@@ -155,7 +155,7 @@ Pod::Spec.new do |s|
     t.subspec 'Twitter' do |u|
       u.ios.source_files = 'REActivityViewController/RETwitterActivity.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_TWITTER'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_Twitter*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Twitter*.png' }
       u.ios.dependency 'REActivityViewController/Core'
       u.ios.frameworks = 'Twitter'
     end
@@ -163,7 +163,7 @@ Pod::Spec.new do |s|
     t.subspec 'VK' do |u|
       u.ios.source_files = 'REActivityViewController/REVKActivity*.{h,m}'
       u.ios.prefix_header_contents = '#define REACTIVITYVIEWCONTROLLER_HAS_VKONTAKTE'
-      u.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/Icon_VK*.png' }
+      u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_VK*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
       u.ios.dependency 'REActivityViewController/Auth'
       u.ios.dependency 'REActivityViewController/Core'
@@ -183,7 +183,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |t|
     t.ios.source_files = 'REActivityViewController/REActivit*.{h,m}'
     t.ios.public_header_files = 'REActivityViewController/REActivit*.h'
-    t.ios.resource_bundle = { 'REActivityViewController.bundle' => 'REActivityViewController/REActivityViewController.bundle/{Background,Button,Icon_Custom}*.png' }
+    t.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/{Background,Button,Icon_Custom}*.png' }
     t.ios.frameworks = 'Foundation', 'UIKit', 'SystemConfiguration', 'MobileCoreServices', 'Security'
     t.ios.prefix_header_contents = <<-EOS
     #import <Availability.h>
@@ -228,7 +228,7 @@ EOS
 
   s.subspec 'Trash' do |t|
     t.ios.resource_bundle = {
-    'REActivityViewController.bundle' => [
+    'REActivityViewController' => [
         'REActivityViewController/REActivityViewController.bundle/Icon_{Instagram,Evernote,Wechat}*.png',
         'Localizations/REWeChatActivity.{h,m}'
         ]
