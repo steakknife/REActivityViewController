@@ -23,6 +23,8 @@
 // THE SOFTWARE.
 //
 
+#import "REConfig.h"
+
 #ifdef COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail
 #import "REMailActivity.h"
 #endif

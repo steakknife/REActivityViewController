@@ -23,6 +23,8 @@
 // THE SOFTWARE.
 //
 
+#import "REConfig.h"
+
 #import <Foundation/Foundation.h>
 #if defined(COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Message ) || defined(COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail)
 #import <MessageUI/MessageUI.h>

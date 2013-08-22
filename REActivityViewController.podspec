@@ -14,21 +14,18 @@ Pod::Spec.new do |s|
 
   s.subspec 'Activity' do |t|
     t.subspec 'Chrome' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Chrome'
       u.ios.source_files = 'REActivityViewController/REChromeActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Chrome*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Copy' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Copy'
       u.ios.source_files = 'REActivityViewController/RECopyActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Copy*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Diigo' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Diigo'
       u.ios.source_files = 'REActivityViewController/REDiigoActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Diigo*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
@@ -38,7 +35,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Facebook' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Facebook'
       u.ios.source_files = 'REActivityViewController/REFacebookActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Facebook*.png' }
       u.ios.dependency 'Facebook-iOS-SDK', '>= 3.5'
@@ -49,7 +45,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Instapaper' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Instapaper'
       u.ios.source_files = 'REActivityViewController/REInstapaperActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Instapaper*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
@@ -59,7 +54,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Kippt' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Kippt'
       u.ios.source_files = 'REActivityViewController/REKipptActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Kippt*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
@@ -69,7 +63,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Mail' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Mail'
       u.ios.source_files = 'REActivityViewController/REMailActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Mail*.png' }
       u.ios.dependency 'REActivityViewController/Core'
@@ -77,14 +70,12 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Maps' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Maps'
       u.ios.source_files = 'REActivityViewController/REMapsActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Maps*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Message' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Message'
       u.ios.source_files = 'REActivityViewController/REMessageActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Message*.png' }
       u.ios.dependency 'REActivityViewController/Core'
@@ -92,7 +83,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Pocket' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Pocket'
       u.ios.source_files = 'REActivityViewController/REPocketActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Pocket*.png' }
       u.ios.dependency 'PocketAPI', '~> 1.0.2'
@@ -101,14 +91,12 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Print' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Print'
       u.ios.source_files = 'REActivityViewController/REPrintActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Print*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'Readability' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Readability'
       u.ios.source_files = 'REActivityViewController/REReadabilityActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Readability*.png' }
       u.ios.dependency 'AFXAuthClient', '~> 1.0.8'
@@ -119,14 +107,12 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Safari' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Safari'
       u.ios.source_files = 'REActivityViewController/RESafariActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Safari*.png' }
       u.ios.dependency 'REActivityViewController/Core'
     end
 
     t.subspec 'SaveToCameraRoll' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_SaveToCameraRoll'
       u.ios.source_files = 'REActivityViewController/RESaveToCameraRollActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Photos*.png' }
       u.ios.dependency 'REActivityViewController/Core'
@@ -134,7 +120,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'SinaWeibo' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_SinaWeibo'
       u.ios.source_files = 'REActivityViewController/RESinaWeiboActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Weibo*.png' }
       u.ios.dependency 'REActivityViewController/Core'
@@ -142,7 +127,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Tumblr' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Tumblr'
       u.ios.source_files = 'REActivityViewController/RETumblrActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Tumblr*.png' }
       u.ios.dependency 'AFXAuthClient', '~> 1.0.8'
@@ -154,7 +138,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'Twitter' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_Twitter'
       u.ios.source_files = 'REActivityViewController/RETwitterActivity.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_Twitter*.png' }
       u.ios.dependency 'REActivityViewController/Core'
@@ -162,7 +145,6 @@ Pod::Spec.new do |s|
     end
 
     t.subspec 'VK' do |u|
-      s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Activity_VK'
       u.ios.source_files = 'REActivityViewController/REVKActivity*.{h,m}'
       u.ios.resource_bundle = { 'REActivityViewController' => 'REActivityViewController/REActivityViewController.bundle/Icon_VK*.png' }
       u.ios.dependency 'AFNetworking', '~> 1.3'
@@ -172,7 +154,6 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Auth' do |t|
-    s.ios.prefix_header_contents = '#define COCOAPODS_POD_AVAILABLE_REActivityViewController_Auth'
     t.ios.source_files = 'REActivityViewController/REAuth*.{h,m}'
     t.ios.dependency 'REActivityViewController/Core'
   end
